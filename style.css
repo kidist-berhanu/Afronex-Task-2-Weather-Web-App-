@@ -5,59 +5,69 @@
     box-sizing: border-box;
 }
 body{
-    color: hsl(197, 71%, 73%);
-    background: linear-gradient(160deg, hsl(197, 71%, 73%),#8db9c7);
+    background-color: skyblue;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
 }
-.card{
-    width:90%;
-    max-width: 470px;
-    background: linear-gradient(160deg,hsl(184, 39%, 34%),#1d657a);
+.container {
+    width: 90%;
+    max-width: 430px;
+    background: linear-gradient(160deg, rgba(85, 64, 63, 0.6), rgba(29, 101, 122, 0.7)); /* Adjust the alpha value (0.7) to control transparency */
     color: #fff;
-    margin: 50px auto 0;
+    margin: 50px auto 0  ;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 55px 35px;
     text-align: center;
 }
+
 .search{
+    position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .search input{
+    position: absolute;
+    width: 100%;
     border: 0;
     outline: 0;
     background: #ebfffc;
     color: #555;
     padding: 10px 25px;
-    height: 60px;
+    height:45px;
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .search button{
+    position: absolute;
+    right: 0;
     border: 0;
     outline: 0;
-    background: #ebfffc;
+    padding: 5px 30px 0 5px;
+    background: transparent;
     border-radius: 50%; 
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
 }
 .search button img{
     width: 16px;
 }
 .weather-icon{
-    width: 170px;
-    margin-top: 30px;
+    width: 200px;
+    margin-top: 2px;
 }
 .weather h1{
-    font-size: 80px;
-    font-weight: 500;
+    font-size: 70px;
+    font-weight: 50;
 }
 .weather h2{
-    font-size: 45px;
+    font-size: 37px;
     font-weight: 400;
     margin-top: -10px;
 }
@@ -74,11 +84,18 @@ body{
     text-align: left;
 }
 .col img{
-    width: 40px;
+    width: 35px;
     margin-right: 10px;
 }
 .humidity, .wind{
-    font-size: 20px;
+    font-size: 19px;
     margin-top: -6px;
 
+}
+.invalid {
+    text-align: center;
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 40px;
+    display: none;
 }
